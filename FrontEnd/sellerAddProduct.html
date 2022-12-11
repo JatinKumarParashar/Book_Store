@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li> <a href="C:\Users\jaykp\Desktop\Book_Store\FrontEnd\crudCustomer.html">CRUD Customer</a></li>
+            <li><a href="C:\Users\jaykp\Desktop\Book_Store\FrontEnd\crudSellers.html">CRUD Seller</a></li>
+            <li><a href="C:\Users\jaykp\Desktop\Book_Store\FrontEnd\sellerAddProduct.html">CRUD Book</a></li>
+            <li><a href="C:\Users\jaykp\Desktop\Book_Store\FrontEnd\customerStore.html">Purchase Book</a></li>
+            <li><a href="C:\Users\jaykp\Desktop\Book_Store\FrontEnd\purchaseCustomer.html">Book Purchase by Customer</a></li>
+            <li><a href="C:\Users\jaykp\Desktop\Book_Store\FrontEnd\purchaseSeller.html">Book Sold by Seller</a></li>
+        </ul>
+    </header>
+    <form method="post" onsubmit="save(event)">
+        <label for="title">Book title: </label>
+        <input type="text" name="title" id="title"><br><br>
+        <label for="image">Book image: </label>
+        <input type="text" name="image" id="image"><br><br>
+        <label for="price">Price: </label>
+        <input type="number" name="price" id="price"><br><br>
+        <label for="sellerId">Enter Seller Id :</label>
+        <input type="text" name="sellerId" id="sellerId">
+        <input type="hidden" name="bookId" id="bookId" value=""><br><br>
+        <button type="submit">Add Book</button>
+    </form>
+    <br>
+    <br>
+    <div id="books">
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script src="sellerAddProduct.js"></script>
+</body>
+
+</html>

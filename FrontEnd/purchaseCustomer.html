@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Book By Customer</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li> <a href="C:\Users\jaykp\Desktop\Book_Store\FrontEnd\crudCustomer.html">CRUD Customer</a></li>
+            <li><a href="C:\Users\jaykp\Desktop\Book_Store\FrontEnd\crudSellers.html">CRUD Seller</a></li>
+            <li><a href="C:\Users\jaykp\Desktop\Book_Store\FrontEnd\sellerAddProduct.html">CRUD Book</a></li>
+            <li><a href="C:\Users\jaykp\Desktop\Book_Store\FrontEnd\customerStore.html">Purchase Book</a></li>
+            <li><a href="C:\Users\jaykp\Desktop\Book_Store\FrontEnd\purchaseCustomer.html">Book Purchase by Customer</a></li>
+            <li><a href="C:\Users\jaykp\Desktop\Book_Store\FrontEnd\purchaseSeller.html">Book Sold by Seller</a></li>
+        </ul>
+    </header>
+    <form onsubmit="save(event)" method="get">
+        <label for="customerId">Enter customer Id : </label>
+        <input type="number" name="customerId" id="customerId">
+        <button type="submit">Find previous Purchase</button>
+    </form>
+    <div id="books">
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+<script src="purchaseCustomer.js"></script>
+</body>
+</html>
